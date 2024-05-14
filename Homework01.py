@@ -1,26 +1,34 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Sat May 11 21:53:19 2024
 
-This is a temporary script file.
+@author: GENE
 """
 
-odd = 0
-s = 0
+import random
+a = random.randrange(5,101,5)
+b = random.randrange(5,101,5)
+c = random.randrange(5,101,5)
+d = random.randrange(5,101,5)
+e = random.randrange(5,101,5)
 
-print()
-print("同時被5及15整除之數：",end="")
+print(a,b,c,d,e)
 
-for i in range(1,101):
-    if i % 2 == 1:
-        odd += i
-#        print(i,end=" ")
-    if i % 7 == 0:
-        s += i
-#        print(i,end=" ")
-    if i % 15 == 0:
-        print(i,end=" ")
+print(a,end=" ")
+
+while b == a:
+    b = random.randrange(5,101,5)
+print(b,end=" ")
+    
+while c == b or c == a:
+    c = random.randrange(5,101,5)
+print(c,end=" ")
+
+while d == c or d == b or d == a:
+    d = random.randrange(5,101,5)
+print(d,end=" ")
+
+while e == d or e == c or e == b or e == a:
+    e = random.randrange(5,101,5)
+print(e,end=" ")
         
-print()
-print("奇數和：",odd)
-print("7整除之和：",s)
